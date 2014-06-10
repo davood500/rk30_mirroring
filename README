@@ -1,0 +1,6 @@
+To build rk30_mirroring.ko
+
+$ export ARCH=arm && export CROSS_COMPILE=arm-linux-gnueabihf-
+$ export KDIR=/path/to/kernel/directory
+$ make -C $KDIR modules
+$ make -C $KDIR M=`pwd` modules
